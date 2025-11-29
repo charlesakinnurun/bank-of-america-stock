@@ -34,6 +34,9 @@ df = yf.download(TICKER,start=START_DATE,end=END_DATE)
 df
 
 # %%
+df.to_csv("BAC_stock_data.csv",index=False)
+
+# %%
 print(df.describe())
 
 # %% [markdown]
